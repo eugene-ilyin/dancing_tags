@@ -6,9 +6,9 @@ This library requires jQuery and jQuery.UI.
 
 It's very easy use it
 
-1. Create container. For example:
+1. Create container and specify width and position: relative. For example:
 ```
-&ltdiv id="dancing-tags-container" style="width: 300px;">&lt/div>
+&ltdiv id="dancing-tags-container" style="width: 300px; position: relative;">&lt/div>
 ```
 
 2. Provide list of tags and call function dancing_tags_cloud from jQuery object:
