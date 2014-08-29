@@ -9,6 +9,18 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
 
+    <script src="lib/jquery.dancing_tags_cloud.js"></script>
+    <style type="text/css">@import url("lib/dancing_tags_cloud.css");</style>
+    <style>
+      div.container {
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        border: 1px #CCC solid;
+        margin-top: 100px;
+        margin-left: 100px;
+      }
+    </style>
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -29,6 +41,27 @@
       <div class="inner clearfix">
         <section id="main-content">
           <p>Dancing tags cloud is a jQuery plugin that allow create cloud with dancing tags.</p>
+          <div class="container" style="width: 380px;"></div>
+          <script type="text/javascript">
+            jQuery(function($) {
+                var tags = [
+                    {html : '<a href="https://plus.google.com" target="_blank" style="color: white;">Google+</a>', color : '#d34836'},
+                    {html : '<span style="color: white;">Facebook</span>', color : '#3b5998'},
+                    {html : '<span style="color: white;">LinkedIn</span>', color : '#007bb6'},
+                    {html : '<span style="color: white;">Instagram</span>', color : '#517fa4'},
+                    {html : '<span style="color: white;">Vkontakte</span>', color : '#45668e'},
+                    {html : '<a href="https://twitter.com" target="_blank" style="color: white;">Twitter</a>', color : '#00aced'},
+                    {html : '<span style="color: white;">Foursquare</span>', color : '#0072b1'},
+                    {html : 'Default color example'},
+                    {html : '<a href="https://youtube.com" target="_blank" style="color: white;">Youtube</a>', color : '#bb0000'},
+                    {html : '<span style="color: white;">Pinterest</span>', color : '#cb2027'},
+                    {html : '<span style="color: white;">Quora</span>', color : '#a82400'},
+                    {html : '<span style="color: white;">Vine</span>', color : '#00bf8f'}
+                ];
+            
+                $('.container').dancing_tags_cloud(tags, 200);
+            });
+          </script>
 
 <p>It can be usually for tags, or other elements which you want to highlight.</p>
 
