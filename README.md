@@ -8,7 +8,7 @@ It's very easy use it
 
 1. Create container. For example:
 ```
-<div id="dancing-tags-container" style="width: 300px;"></div>
+&ltdiv id="dancing-tags-container" style="width: 300px;">&lt/div>
 ```
 
 2. Provide list of tags and call function dancing_tags_cloud from jQuery object:
