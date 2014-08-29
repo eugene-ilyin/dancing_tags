@@ -9,7 +9,7 @@ It's very easy use it
 
 1. Create container and specify width and position: relative. For example:
 ```
-&ltdiv id="dancing-tags-container" style="width: 300px; position: relative;">&lt/div>
+<div id="dancing-tags-container" style="width: 300px; position: relative;"></div>
 ```
 
 2. Provide list of tags and call function dancing_tags_cloud from jQuery object:
