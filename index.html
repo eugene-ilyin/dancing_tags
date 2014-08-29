@@ -74,7 +74,9 @@
 <ol>
 <li>
 <p>Create container. For example: </p>
-<div></div>
+```
+<div id="dancing-tags-container" style="width: 300px;"></div>
+```
 </li>
 <li><p>Provide list of tags and call function dancing_tags_cloud from jQuery object:</p></li>
 </ol><pre><code>jQuery(function($) {
@@ -93,7 +95,7 @@
         {html : '&lt;span style="color: white;"&gt;Vine&lt;/span&gt;', color : '#00bf8f'}
     ];
 
-    $('.container').dancing_tags_cloud(tags, 200);
+    $('#dancing-tags-container').dancing_tags_cloud(tags, 200);
 });
 </code></pre>
 
