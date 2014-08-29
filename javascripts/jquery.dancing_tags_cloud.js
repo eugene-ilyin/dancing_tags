@@ -42,7 +42,6 @@
     }
     var $container = $(this);
     var containerWidth = $container.innerWidth();
-    var container_position = $container.offset();
 
     var topIndent = 20;
     var bottomIndent = 20;
@@ -65,14 +64,11 @@
       var $elem = jQuery(raw_tags[i]['elem']);
       var cur_width = $elem.outerWidth();
 
-      var tagLeft = container_position.left + leftIndent;
-      var tagTop = container_position.top + topIndent;
-
       // Filling array with tags.
       html_tags[j]['tags'][html_tags[j]['tags'].length] = {
         elem : $elem,
-        top : tagTop,
-        left : tagLeft
+        top : topIndent,
+        left : leftIndent
       };
       html_tags[j]['width'] += $elem.outerWidth() + Math.floor($elem.outerWidth() / 5);
 
