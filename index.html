@@ -14,7 +14,7 @@
     <script type="text/javascript" src="javascripts/jquery.dancing_tags_cloud.js"></script>
     <link rel="stylesheet" type="text/css" href="stylesheets/dancing_tags_cloud.css" media="screen">
     <style>
-      div.container {
+      #dancing-tags-container {
         -webkit-border-radius: 3px;
         -moz-border-radius: 3px;
         border-radius: 3px;
@@ -43,7 +43,7 @@
       <div class="inner clearfix">
         <section id="main-content">
           <p>Dancing tags cloud is a jQuery plugin that allow create cloud with dancing tags.</p>
-          <div class="container" style="width: 380px;"></div>
+          <div id="dancing-tags-container" style="width: 380px;"></div>
           <script type="text/javascript">
             jQuery(function($) {
                 var tags = [
@@ -61,7 +61,7 @@
                     {html : '<span style="color: white;">Vine</span>', color : '#00bf8f'}
                 ];
             
-                $('.container').dancing_tags_cloud(tags, 200);
+                $('#dancing-tags-container').dancing_tags_cloud(tags, 200);
             });
           </script>
 
