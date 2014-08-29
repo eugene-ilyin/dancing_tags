@@ -1,12 +1,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" version="XHTML+RDFa 1.0">
   <head>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js"></script>
-    <script src="lib/jquery.dancing_tags_cloud.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="lib/jquery.dancing_tags_cloud.js"></script>
     <style type="text/css">@import url("lib/dancing_tags_cloud.css");</style>
     <style>
-      div.container {
+      #dancing-tags-container {
         -webkit-border-radius: 3px;
         -moz-border-radius: 3px;
         border-radius: 3px;
@@ -17,9 +17,9 @@
     </style>
   </head>
 <body>
-<div class="container" style="width: 380px;"></div>
+<div id="dancing-tags-container" style="width: 380px;"></div>
 
-<script>
+<script type="text/javascript">
     jQuery(function($) {
         var tags = [
             {html : '<a href="https://plus.google.com" target="_blank" style="color: white;">Google+</a>', color : '#d34836'},
@@ -36,7 +36,7 @@
             {html : '<span style="color: white;">Vine</span>', color : '#00bf8f'}
         ];
 
-        $('.container').dancing_tags_cloud(tags, 200);
+        $('#dancing-tags-container').dancing_tags_cloud(tags, 200);
     });
 </script>
 </body>
