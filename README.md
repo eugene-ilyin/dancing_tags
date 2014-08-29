@@ -8,6 +8,7 @@ It's very easy use it
 
 2. Provide list of tags and call function dancing_tags_cloud from jQuery object:
 
+```
 jQuery(function($) {
     var tags = [
         {html : '<a href="https://plus.google.com" target="_blank" style="color: white;">Google+</a>', color : '#d34836'},
@@ -26,6 +27,7 @@ jQuery(function($) {
 
     $('.container').dancing_tags_cloud(tags, 200);
 });
+```
 
 You can specify html content and background color for tag. Also you can specify speed of moving tags.
 Html is required attribute, but you can skip color.
