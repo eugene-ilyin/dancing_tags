@@ -1,6 +1,7 @@
 Dancing tags cloud is a jQuery plugin that allow create cloud with dancing tags.
 
 It can be usually for tags, or other elements which you want to highlight.
+For example, it looks good for "Cloud of the projects" or "Cloud of the ideas".
 
 This library requires jQuery and jQuery.UI.
 
