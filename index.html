@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" version="XHTML+RDFa 1.0">
+  <head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js"></script>
+    <script src="jquery.dancing_tags_cloud.js"></script>
+    <style type="text/css">@import url("dancing_tags_cloud.css");</style>
+    <style>
+      div.container {
+        border: 1px gray solid;
+        margin-top: 100px;
+        margin-left: 100px;
+      }
+    </style>
+  </head>
+<body>
+<div class="container" style="width: 380px;"></div>
+
+<script>
+    jQuery(function($) {
+        var tags = [
+            {text : '<a href="https://plus.google.com" target="_blank">Google+</a>', color : '#d34836'},
+            {text : 'Facebook', color : '#3b5998'},
+            {text : 'LinkedIn'},
+            {text : 'Instagram', color : '#517fa4'},
+            {text : 'Vkontakte', color : '#45668e'},
+            {text : '<a href="https://twitter.com" target="_blank">Twitter</a>', color : '#00aced'},
+            {text : 'Foursquare'},
+            {text : 'Devianart'},
+            {text : 'Youtube', color : '#bb0000'},
+            {text : 'Pinterest', color : '#cb2027'}
+        ];
+
+        $('.container').dancing_tags_cloud(tags, 200);
+    });
+</script>
+</body>
+</html>

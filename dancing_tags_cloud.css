@@ -1,0 +1,9 @@
+div.dancing-tag {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  padding: 5px;
+  width: auto;
+  position: absolute;
+  background-color: #99CCFF;
+}
